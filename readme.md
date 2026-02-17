@@ -5,6 +5,7 @@
 - **[01/03/2022]** Final release version for the 2022 lab.
 - **[23/02/2023]** Updated for 2023 lab. Issue with trigger sensor noisy data fixed (sensor read delay suspected).
 - **[07/03/2023]** Final release version for the 2023 lab.
+- **[16/02/2026]** Added "!pip install serial" line to ensure "Serial Library" is present
 
 ## Description
 This two part code, consisting of an Arduino part 'stirling_engine_arduino.uno' and Python part 'stirling_engine_csvwrite.ipynb', was written to facilitate data acquisition from the sensors connected to the Stirling Engine to measure performance characteristics. The sensors are connected to an Arduino Uno, which reads the sensor data and sends it to a python script over serial communication, which then writes it to a .csv file for convenient saving and post-processing of results. There are 2 temperature sensors measuring the bottom and top plates of the working fluid enclosure, and an infrared beam break sensor that registers when a taped spoke on the flywheel passes between the IR bulb and receiver. The code can either be ran for a fixed amount of time, or measurements can be start and stopped with the push of a button. 
